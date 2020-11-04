@@ -1,0 +1,9 @@
+require('dotenv').config();
+
+// Add your channels here and rename this file to channels.js
+var channels = [
+    'dialogikTV',
+    // Add more channels
+];
+
+module.exports = channels;

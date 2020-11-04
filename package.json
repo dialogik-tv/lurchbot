@@ -1,0 +1,18 @@
+{
+    "name": "lurchbot",
+    "version": "0.0.1",
+    "description": "This is the dialogikTV Twitch Lurchbot",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Moritz <moritz@dialogik.tv>",
+    "license": "ISC",
+    "private": true,
+    "dependencies": {
+        "discord.js": "^12.4.1",
+        "dotenv": "^8.2.0",
+        "tmi.js": "^1.5.0"
+    }
+}
