@@ -53,7 +53,7 @@ try {
                         .setColor('#00acee')
                         .setTitle(`\`dialogik\`-Erwähnung in ${channel}`)
                         .setDescription(`> \`@${username}\`: ${message}`)
-                        .setURL(channelUrl)
+                        .setURL(channelUrl.replace("#", ""))
                         .setTimestamp()
                         .setFooter(`Erwähnt in \`${channel}\``)
 
