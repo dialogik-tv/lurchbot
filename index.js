@@ -39,6 +39,8 @@ try {
                     // Ignore messages from self
                     if(self) return;
 
+                    channel = channel.replace("#", "");
+
                     const username = user['display-name'];
                     const userUrl = `https://www.twitch.tv/${username}`;
                     const channelUrl = `https://www.twitch.tv/${channel}`;
@@ -51,11 +53,11 @@ try {
 
                     const embed = new Discord.MessageEmbed()
                         .setColor('#00acee')
-                        .setTitle(`\`dialogik\`-Erwähnung in ${channel}`)
+                        .setTitle(`\`dialogik\`-Erwähnung in #${channel}`)
                         .setDescription(`> \`@${username}\`: ${message}`)
-                        .setURL(channelUrl.replace("#", ""))
+                        .setURL(channelUrl)
                         .setTimestamp()
-                        .setFooter(`Erwähnt in \`${channel}\``)
+                        .setFooter(`Erwähnt in #${channel}`)
 
                     if(user.mod) {
                         embed.setAuthor(username, 'https://cdn.discordapp.com/attachments/673094090706911262/734155246624047164/ezgif-7-bab0479fb541.png', userUrl)
